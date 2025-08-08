@@ -1,16 +1,45 @@
-# music_playlist_app
+🚀 How to Run This Flutter App
+📥 1. Clone the project
+bash
+คัดลอก
+แก้ไข
+git clone https://github.com/your-username/music_playlist_app.git
+cd music_playlist_app
+🔁 เปลี่ยน URL ให้เป็นของ repo จริงถ้าคุณอัปโหลดขึ้น GitHub แล้ว
 
-A new Flutter project.
+⚙️ 2. Install dependencies
+bash
+คัดลอก
+แก้ไข
+flutter pub get
+🏃 3. Run the app
+bash
+คัดลอก
+แก้ไข
+flutter run
+คุณสามารถรันได้ทั้งบน emulator หรือ device จริง
 
-## Getting Started
+⚠️ ปัญหาที่อาจเกิดขึ้น: รันแอปไม่ผ่าน
+หากคุณเจอปัญหาเกี่ยวกับ build หรือ error ที่เกิดจาก Gradle เช่น:
 
-This project is a starting point for a Flutter application.
+การตั้งค่า JVM หรือ locale ที่ไม่ตรง
 
-A few resources to get you started if this is your first Flutter project:
+การโหลด Gradle failed โดยไม่มีสาเหตุชัดเจน
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ให้ตรวจสอบไฟล์ android/gradle.properties และตรวจสอบว่ามีการตั้งค่าดังนี้:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+properties
+คัดลอก
+แก้ไข
+org.gradle.jvmargs=-Xmx1536m -Duser.country=US -Duser.language=en
+หากไม่มีหรือค่าต่างจากนี้:
+
+👉 แนะนำให้สร้างโปรเจค Flutter ใหม่ (เช่น flutter create dummy_app) แล้วคัดลอกค่าจากไฟล์ gradle.properties ของโปรเจคนั้นมาแทนที่ของโปรเจคนี้
+
+🧰 Resources
+Flutter Official Documentation
+
+Install Flutter SDK
+
+Flutter Codelab
+
