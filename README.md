@@ -1,16 +1,56 @@
-# music_playlist_app
 
-A new Flutter project.
+# 🎵 Music Playlist App
 
-## Getting Started
+A Flutter project for a simple music playlist application.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 How to Run This Flutter App
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 📥 1. Clone the project
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+git clone https://github.com/Chetsada-psm/music_playlist_app.git
+cd music_playlist_app
+```
+
+
+---
+
+### ⚙️ 2. Install dependencies
+
+```bash
+flutter pub get
+```
+
+---
+
+### 🏃 3. Run the app
+
+```bash
+flutter run
+```
+
+> ✅ รองรับการรันทั้งบน emulator หรือ physical device
+
+---
+
+### ⚠️ ปัญหาที่อาจเกิดขึ้น: รันแอปไม่ผ่าน
+
+หากคุณเจอปัญหา build error จาก Gradle (เช่น locale ผิด หรือ JVM arguments ไม่ตรง), ให้ตรวจสอบไฟล์ `android/gradle.properties` ว่ามีบรรทัดนี้:
+
+```properties
+org.gradle.jvmargs=-Xmx1536m -Duser.country=US -Duser.language=en
+```
+
+ถ้าไม่มี หรือไม่เหมือน:
+
+👉 **แนะนำให้สร้างโปรเจค Flutter ใหม่** (ใช้คำสั่ง `flutter create dummy_app`) แล้วคัดลอกค่าจากไฟล์ `gradle.properties` ของโปรเจคนั้นมาใส่ในโปรเจคนี้แทน
+
+---
+
+### 🧰 Resources
+
+- [Flutter Official Documentation](https://flutter.dev/docs)
+- [Install Flutter SDK](https://flutter.dev/docs/get-started/install)
+- [Flutter Codelab](https://flutter.dev/docs/get-started/codelab)
